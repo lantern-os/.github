@@ -100,8 +100,12 @@ See [`lantern-docs/wiki/Principles.md`](https://github.com/lantern-os/lantern-do
 
 ## Project status
 
-**Phase 0 — Foundations.** No production code exists. We are writing architecture,
-threat models, and RFCs. See [`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
+**Phase 1 — Microkernel prototype.** Phase 0 (architecture, threat models, governance,
+foundational RFCs) is complete, closed by
+[RFC-0004](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0004-phase-0-to-phase-1-transition.md). `lantern-boot`,
+`lantern-hal`, and `lantern-kernel` are now open for prototype/throwaway code toward
+booting a minimal kernel under QEMU. See
+[`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
 
 ## Licence
 
