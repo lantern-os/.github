@@ -100,11 +100,14 @@ See [`lantern-docs/wiki/Principles.md`](https://github.com/lantern-os/lantern-do
 
 ## Project status
 
-**Phase 1 — Microkernel prototype.** Phase 0 (architecture, threat models, governance,
-foundational RFCs) is complete, closed by
-[RFC-0004](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0004-phase-0-to-phase-1-transition.md). `lantern-boot`,
-`lantern-hal`, and `lantern-kernel` are now open for prototype/throwaway code toward
-booting a minimal kernel under QEMU. See
+**Phase 2 — Capability runtime & first services.** Phase 1 (microkernel prototype: a
+confined "hello service" over a granted capability, with IPC latency benchmarked and
+within target) is complete, closed by
+[RFC-0009](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0009-phase-1-to-phase-2-transition.md).
+`lantern-capabilities`, `lantern-runtime`, `lantern-crypto`, and `lantern-filesystem` are
+now open for prototype code toward a capability-brokering service framework, a
+capability-backed WASM runtime, and the first two real services (a content-addressed
+filesystem v0 and a crypto keystore); `lantern-sdk` may begin its v0. See
 [`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
 
 ## Licence
