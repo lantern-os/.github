@@ -100,15 +100,16 @@ See [`lantern-docs/wiki/Principles.md`](https://github.com/lantern-os/lantern-do
 
 ## Project status
 
-**Phase 2 — Capability runtime & first services.** Phase 1 (microkernel prototype: a
-confined "hello service" over a granted capability, with IPC latency benchmarked and
-within target) is complete, closed by
-[RFC-0009](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0009-phase-1-to-phase-2-transition.md).
-`lantern-capabilities`, `lantern-runtime`, `lantern-crypto`, and `lantern-filesystem` are
-now open for prototype code toward a capability-brokering service framework, a
-capability-backed WASM runtime, and the first two real services (a content-addressed
-filesystem v0 and a crypto keystore); `lantern-sdk` may begin its v0. See
-[`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
+**Phase 3 — Privacy, identity, networking, and AI.** Phase 2 (capability runtime & first
+services) is complete, closed by
+[RFC-0017](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0017-phase-2-to-phase-3-transition.md)/[ADR-0021](https://github.com/lantern-os/lantern-rfcs/blob/main/adr/0021-phase-2-complete-phase-3-opened.md):
+its exit criterion — a third-party Wasm app runs confined, reads a file only via a granted
+capability, and cannot touch anything it wasn't granted, demonstrated adversarially — is
+met (`lantern-example-signer`, packaged by `lantern-sdk build`). `lantern-network`,
+`lantern-ai-runtime`, and identity/wallet work are now open for prototype code, and the
+first Phase 3 effort is the confined-execution port carried forward from Phase 2 (the
+services and the runtime run in-process on a host target, not yet confined on the kernel).
+See [`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
 
 ## Licence
 

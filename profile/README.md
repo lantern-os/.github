@@ -35,4 +35,5 @@ We are **architecture-first**: documentation, threat models, and RFCs come befor
 | [lantern-shell](https://github.com/lantern-os/lantern-shell) | User shell + capability-consent surface |
 | [lantern-sdk](https://github.com/lantern-os/lantern-sdk) | Developer SDK and tooling |
 
-*Phase 0 — Foundations. Building the lantern before we light it.*
+*Phase 3 — Privacy, identity, networking, and AI. Phases 0–2 (foundations, microkernel
+prototype, capability runtime & first services) are complete.*
