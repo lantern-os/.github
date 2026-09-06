@@ -34,6 +34,7 @@ and `STATUS.md`.
 | [`lantern-hal`](https://github.com/lantern-os/lantern-hal) | Hardware abstraction layer (x86-64 → RISC-V) | Hardware |
 | [`lantern-kernel`](https://github.com/lantern-os/lantern-kernel) | Microkernel: scheduling, memory, IPC, capabilities | Kernel |
 | [`lantern-capabilities`](https://github.com/lantern-os/lantern-capabilities) | Capability model, object capabilities, derivation | Security core |
+| [`lantern-abi`](https://github.com/lantern-os/lantern-abi) | Confined-program syscall ABI + minimal `no_std` runtime (non-TCB) | Runtime |
 | [`lantern-runtime`](https://github.com/lantern-os/lantern-runtime) | User-space service framework + WASM runtime | Runtime |
 | [`lantern-filesystem`](https://github.com/lantern-os/lantern-filesystem) | Content-addressed, encrypted, capability-gated storage | Services |
 | [`lantern-network`](https://github.com/lantern-os/lantern-network) | Decentralised, anonymity-capable networking | Services |
