@@ -101,15 +101,15 @@ See [`lantern-docs/wiki/Principles.md`](https://github.com/lantern-os/lantern-do
 
 ## Project status
 
-**Phase 3 — Privacy, identity, networking, and AI.** Phase 2 (capability runtime & first
-services) is complete, closed by
-[RFC-0017](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0017-phase-2-to-phase-3-transition.md)/[ADR-0021](https://github.com/lantern-os/lantern-rfcs/blob/main/adr/0021-phase-2-complete-phase-3-opened.md):
-its exit criterion — a third-party Wasm app runs confined, reads a file only via a granted
-capability, and cannot touch anything it wasn't granted, demonstrated adversarially — is
-met (`lantern-example-signer`, packaged by `lantern-sdk build`). `lantern-network`,
-`lantern-ai-runtime`, and identity/wallet work are now open for prototype code, and the
-first Phase 3 effort is the confined-execution port carried forward from Phase 2 (the
-services and the runtime run in-process on a host target, not yet confined on the kernel).
+**Phase 4 — Hardware and assurance.** Phase 3 (privacy, identity, networking, and AI) is complete, closed by
+[RFC-0036](https://github.com/lantern-os/lantern-rfcs/blob/main/rfcs/0036-phase-3-to-phase-4-transition.md)/[ADR-0041](https://github.com/lantern-os/lantern-rfcs/blob/main/adr/0041-phase-3-complete-phase-4-opened.md). Its exit criteria are met:
+
+- data at rest is encrypted and records who wrote it;
+- a local AI agent runs with a visible, revocable capability set and a faithful audit log;
+- an app presents each network peer an identity no other context's can be linked to.
+
+Phase 4 begins with formal verification of the kernel's capability and IPC paths, then moves onto real RISC-V hardware:
+a hardware root of trust, measured boot, and IOMMU-confined drivers.
 See [`lantern-docs/wiki/Roadmap.md`](https://github.com/lantern-os/lantern-docs/blob/main/wiki/Roadmap.md).
 
 ## Licence
